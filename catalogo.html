@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo | Angeluss Cucine</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body><header class="encabezado">
+
+    <!-- LOGOTIPO -->
+    <div class="logotipo">
+        <img
+            class="imagen-logotipo"
+            src="img/cocinas_logo.png"
+            alt="Angeluss Cucine"
+        >
+    </div>
+
+    <!-- COLUMNA DERECHA -->
+    <div class="encabezado-derecha">
+
+        <!-- PRIMERA FILA: CONTACTO -->
+        <div class="contacto-superior">
+
+            <a class="boton-contacto"
+               href="https://wa.me/524422260605"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+
+            <a class="boton-contacto" href="tel:+524422260605">
+                <i class="fa-solid fa-phone"></i>
+                <span>442-226-0605</span>
+            </a>
+
+            <a class="boton-contacto"
+               href="https://maps.app.goo.gl/4w6HrPgcPeSJvmVZ9"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Ubicación</span>
+            </a>
+
+            <a class="boton-contacto"
+               href="https://www.instagram.com/angelusscocinas/"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+
+        </div>
+
+        <!-- SEGUNDA FILA: NAVEGACIÓN -->
+        <nav class="menu-principal" aria-label="Navegación principal">
+            <a href="inicio.html">Volver al Inicio</a>
+        </nav>
+
+    </div>
+
+</header>
+
+    <main class="catalogo">
+
+            <div class="encabezado-catalogo">
+                <span class="subtitulo">Angeluss Cucine</span>
+                <h2>Catálogo</h2>
+                <p>
+                    Diseños personalizados para cada espacio.
+                </p>
+            </div>
+
+        <!-- Botones de categorías -->
+        <nav class="filtros-catalogo">
+
+            <button class="filtro activo" data-categoria="cocinas">
+                Cocinas
+            </button>
+
+            <button class="filtro" data-categoria="closets">
+                Closets
+            </button>
+
+            <button class="filtro" data-categoria="muebles">
+                Muebles de baño
+            </button>
+
+            <button class="filtro" data-categoria="entretenimiento">
+                Recreativo
+            </button>
+
+        </nav>
+
+        <!-- Aquí aparecerán las fotografías -->
+        <div id="galeria" class="galeria-catalogo"></div>
+        <!-- Modal para visualizar fotografías -->
+            <div id="modal-imagen" class="modal-imagen">
+
+                <button class="cerrar-modal" id="cerrar-modal">
+                    &times;
+                </button>
+
+                <button class="anterior-modal" id="anterior-modal">
+                    &#10094;
+                </button>
+
+                <img id="imagen-ampliada" src="" alt="Proyecto ampliado">
+
+                <button class="siguiente-modal" id="siguiente-modal">
+                    &#10095;
+                </button>
+
+                <span id="contador-imagen" class="contador-imagen"></span>
+
+            </div>
+
+        <section id="contacto" class="seccion-contacto">
+
+    <div class="encabezado-contacto">
+        <span class="subtitulo">Estamos para atenderte</span>
+        <h2>Contacto</h2>
+        <p>
+            Conoce nuestras redes sociales y contáctanos.
+            Será un placer ayudarte con tu próximo proyecto.
+        </p>
+    </div>
+
+    <div class="contenedor-contacto">
+
+        <!-- Información de contacto -->
+        <div class="informacion-contacto">
+
+            <h3>Conectemos</h3>
+
+            <a href="https://wa.me/524422260605"
+               target="_blank"
+               class="enlace-contacto">
+                <i class="fab fa-whatsapp"></i>
+                <span>
+                    <strong>WhatsApp</strong>
+                    <small>Envíanos un mensaje</small>
+                </span>
+            </a>
+
+            <a href="tel:+524422260605"
+               class="enlace-contacto">
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <strong>Teléfono</strong>
+                    <small>442 226 0605</small>
+                </span>
+            </a>
+
+            <a href="https://www.instagram.com/angelusscocinas/"
+               target="_blank"
+               class="enlace-contacto">
+                <i class="fa-brands fa-instagram"></i>
+                <span>
+                    <strong>Instagram</strong>
+                    <small>@angelusscocinas</small>
+                </span>
+            </a>
+
+            <a href="https://maps.app.goo.gl/4w6HrPgcPeSJvmVZ9"
+               target="_blank"
+               class="enlace-contacto">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>
+                    <strong>Ubicación</strong>
+                    <small>Av. 5 de Febrero 1242, La Piedad, 76150 Santiago de Querétaro, Qro.</small>
+                </span>
+            </a>
+
+        </div>
+
+        <!-- Google Maps -->
+       <div class="mapa-contacto">
+
+            <div class="encabezado-mapa">
+                <span>Encuéntranos</span>
+
+                <a href="https://maps.app.goo.gl/zhodmUSfeqg6QBo39"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="boton-como-llegar">
+
+                    <i class="fa-solid fa-location-arrow"></i>
+                    Cómo llegar
+                </a>
+            </div>
+
+            <iframe
+                src="https://maps.google.com/maps?q=20.5959226,-100.4148836&z=17&output=embed"
+                title="Ubicación de Angeluss Cucine"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+    <script src="js/catalogo.js"></script>
+
+</body>
+</html>
